@@ -5,6 +5,7 @@ Build MySQL and import these data:
 - [BEN.consensus](https://github.com/SKLB-lab/BENviewer/blob/data/BEN_consensus.sql.gz?raw=true)
 - [BEN.reactome](https://github.com/SKLB-lab/BENviewer/blob/data/BEN_reactome.sql.gz?raw=true)
 - [BEN.regnetworks](https://github.com/SKLB-lab/BENviewer/blob/data/BEN_regnetworks.sql.gz?raw=true)
+
 Then run the following SHELL script:
 ```shell
 git clone https://github.com/SKLB-lab/BENviewer.git
