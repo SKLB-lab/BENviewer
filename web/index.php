@@ -94,7 +94,7 @@
                         <div class="detail">
                            <div class="title">Step 1</div>
                            <div class="subtitle">Select Database</div>
-                           <p>Three BEN databases are provided, which are generated based on Consensus, Reactome and Regnetworks.</p>
+                           <p>Three BEN databases are provided, which are generated based on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013724/">ConsensusPathDB</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753187/">Reactome</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4589691/">Regnetwork</a>.</p>
                         </div>
                      </div>
                   </div>
@@ -109,7 +109,7 @@
                         <div class="detail">
                            <div class="title">Step 2</div>
                            <div class="subtitle">Select Algorithm</div>
-                           <p>4 algorithms, <a href="https://arxiv.org/pdf/1403.6652.pdf">DEEPWALK</a>, <a href="https://arxiv.org/pdf/1503.03578.pdf">LINE</a>, <a href="https://arxiv.org/pdf/1607.00653.pdf">NODE2VEC</a> and SDNE, are applied in building BEN databases. Thus 12 datasets are made totally.</p>
+                           <p>4 algorithms, <a href="https://arxiv.org/pdf/1403.6652.pdf">DEEPWALK</a>, <a href="https://arxiv.org/pdf/1503.03578.pdf">LINE</a>, <a href="https://arxiv.org/pdf/1607.00653.pdf">NODE2VEC</a> and <a href="https://arxiv.org/pdf/1711.10146.pdf">SDNE</a>, are applied in building BEN databases. Thus 12 datasets are made totally.</p>
                         </div>
                      </div>
                   </div>
@@ -137,12 +137,13 @@
                <header>
                   <img src="./assets/img/cover.png" width="120" height="120">
                   <div class="titles">
-                     <h1>Visualization of Gene Interaction Networks<br>Based on Graph Embedded Model</h1>
+                     <h1>Gene Interaction Network Visualization<br>Based on Graph Embedding Model</h1>
                      <h2>Yunqing Liu, Yunchi Zhu, Zuhong Lu</h2>
                   </div>
                </header>
                <section>
-                  <p>As an efficient method for biological knowledge mining, network information visualization can assist researchers in exploring the biological significance of their interested gene sets and even the entire interaction network in an intuitive way. However, present tools such as Cytoscape can only visualize the topographic structure of these networks instead of the information behind each node and edge in them. Here we introduced the graph embedding model, which has been widely applied in node & edge attributes mapping for dimensionality reduction. A network interaction cluster visualization method was developed based on this model.</p>
+                  <p>BENviewer is a brand-new online gene interaction network visualization server based on graph embedding models. With mature graph embedding algorithms applied on several interaction network databases, it provides human-friendly 2D visualization based on more than 2000 biological pathways, and these results present not only genes involved but also tightness of interactions in an intuitive way. As a unique visualization server introducing graph embedding application for the first time, it's expected to help researchers gain deeper insights into biological networks beyond generating results explainable by existing knowledge. Additionally, operation-flow for users is simplified to greater extent in its current version, meanwhile URL optimization contributes to data acquisition in batch for further analysis.The web server is open-sourced at <a href="https://github.com/SKLB-lab/BENviewer">https://github.com/SKLB-lab/BENviewer</a>.
+                  </p>
                </section>
             </article>
          </div>
