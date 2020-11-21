@@ -15,3 +15,7 @@ cd BENviewer
 docker-compose -d up
 ```
 Edit MySQL information in [db.php](./web/db.php).
+## Browser Compatibility
+| Chrome | Firefox | Microsoft Edge | Internet Explorer | Safari |
+| ------ | ------- | -------------- | ----------------- | ------ |
+| 67.0+  | 45.2+   | 44.18362.1.0   | 11.1.18362.0      | 13.04  |
