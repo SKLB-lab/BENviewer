@@ -117,9 +117,9 @@ $url = explode('/', $_SERVER["REQUEST_URI"]);
     </footer>
 
     <script>
-        window.jQuery || document.write("<script src='assets/js/jquery-1.10.0.min.js'>\x3C/script>")
+        window.jQuery || document.write("<script src='../../assets/js/jquery-1.10.0.min.js'>\x3C/script>")
     </script>
-    <script src="assets/js/jquery-1.10.0.min.js"></script>
+    <script src="../../assets/js/jquery-1.10.0.min.js"></script>
 
     <script type="text/javascript" src="../../assets/js/min/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../assets/js/bootmetro-panorama.js"></script>
