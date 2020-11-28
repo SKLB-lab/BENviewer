@@ -138,7 +138,7 @@
                   <img src="./assets/img/cover.png" width="120" height="120">
                   <div class="titles">
                      <h1>Gene Interaction Network Visualization<br>Based on Graph Embedding Model</h1>
-                     <h2>Yunqing Liu, Yunchi Zhu, Zuhong Lu</h2>
+                     <h2>Yunchi Zhu, Yunqing Liu, Chunpeng He, Zuhong Lu</h2>
                   </div>
                </header>
                <section>
