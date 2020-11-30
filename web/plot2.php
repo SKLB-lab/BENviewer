@@ -84,11 +84,11 @@ $B = substr($B, 0, strlen($B) - 1);
          };
          var series = [{
             name: 'B',
-            color: 'rgba(0, 191, 255, .1)',
+            color: 'rgba(0, 191, 255, .05)',
             data: [<?php echo $B; ?>]
          },{
             name: 'A',
-            color: 'rgba(223, 83, 83, .4)',
+            color: 'rgba(223, 83, 83, .6)',
             data: [<?php echo $A; ?>]
          }];
 
