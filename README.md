@@ -11,7 +11,7 @@ Build MySQL and import these data:
 Run the following SHELL script:
 ```shell
 git clone https://github.com/SKLB-lab/BENviewer.git
-cd benviewer
+cd BENviewer
 docker-compose up -d
 ```
 Edit MySQL information in [db.php](./web/db.php).
