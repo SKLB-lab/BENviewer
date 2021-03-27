@@ -20,6 +20,17 @@ while ($point = mysqli_fetch_assoc($points)) {
 }
 $A = substr($A, 0, strlen($A) - 1);
 $B = substr($B, 0, strlen($B) - 1);
+$colorB = 'rgba(0, 191, 255, .1)';
+$colorA = 'rgba(223, 83, 83, .4)';
+if (isset($url[4])) {
+   $colors = explode("&", $url[4]);
+   if (isset($colors[0]) && $colors[0] != '') {
+      $colorA = "rgba($colors[0])";
+   }
+   if (isset($colors[1]) && $colors[1] != '') {
+      $colorB = "rgba($colors[1])";
+   }
+}
 ?>
 <html>
 
@@ -76,25 +87,35 @@ $B = substr($B, 0, strlen($B) - 1);
                         enabled: false
                      }
                   }
-               },
-               tooltip: {
-                  headerFormat: '<b>{point.key}<br></b>'
                }
             },
             series: {
                turboThreshold: 0
             }
          };
-         var series = [ {
+         var series = [{
             name: 'B',
-            color: 'rgba(0, 191, 255, .1)',
+            color: '<?php echo $colorB; ?>',
             data: [<?php echo $B; ?>]
-         },{
+         }, {
             name: 'A',
-            color: 'rgba(223, 83, 83, .4)',
+            color: '<?php echo $colorA; ?>',
             data: [<?php echo $A; ?>]
          }];
-
+         var tooltip = {
+            stickOnContact: true,
+            hideDelay: 99999999,
+            useHTML: true,
+            style: {
+               pointerEvents: 'auto'
+            },
+            formatter: function() {
+               let name = `<b>${this.point.name}</b>`;
+               let link = `<a href='https://www.ncbi.nlm.nih.gov/gene/?term=${this.point.name}'>Search on NCBI</a>`;
+               let total = `${name}<br>${link}`;
+               return total;
+            }
+         };
          var json = {};
          json.chart = chart;
          json.title = title;
@@ -103,6 +124,7 @@ $B = substr($B, 0, strlen($B) - 1);
          json.yAxis = yAxis;
          json.series = series;
          json.plotOptions = plotOptions;
+         json.tooltip = tooltip;
          $('#container').highcharts(json);
 
       });
